@@ -19,7 +19,7 @@
 
     <form action="/calculate"  >
         @csrf
-        <input type="hidden" name="hotel_id" value="1">
+        <input type="hidden" name="hotel_id" value="{{$hotel_id}}">
 
         <div class="container w-25">
 
@@ -40,7 +40,7 @@
                     <label for="select_dates" class="form-label">Выберите даты заезда и отъезда</label>
                     <input type="text" id="select_dates" name="select_dates" class="datepicker-here form-control"
                            data-range="true" data-multiple-dates-separator=" - " data-inline="true"
-                           style="width: 252px; display: none;" value="{{$select_dates}}"
+                           style="width: 252px;" value="{{$select_dates}}"
                            readonly
                     />
                 </div>
