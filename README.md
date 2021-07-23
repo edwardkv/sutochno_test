@@ -1,6 +1,6 @@
 ## Установка
 
-1. git clone git@github.com:edwardkv/sutochno_test.git
+1. ```git clone git@github.com:edwardkv/sutochno_test.git```
 
 2. Создаем базу данных
 
