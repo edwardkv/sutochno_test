@@ -50,7 +50,7 @@ php artisan migrate
 ## Описание
 
 Приложение создано на laravel 8.51
-Использован bootstrap для верстки, air datepicker для выбора дат.
+Использован ```bootstrap``` для верстки, ```air datepicker``` для выбора дат.
 
 Таблицы
 
