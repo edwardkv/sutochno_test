@@ -65,7 +65,7 @@
 
             <div class="row align-items-center  mt-2">
                 <div class="col">
-                    <button type="submit" class="btn btn-primary">Заказать</button>
+                    <button type="submit" class="btn btn-primary">Расчитать</button>
                 </div>
             </div>
 

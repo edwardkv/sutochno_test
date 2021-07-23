@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Repositories\OrderRepository;
+use App\Models\Orders;
 
 class OrderController extends Controller
 {
@@ -56,6 +57,18 @@ class OrderController extends Controller
             $cost = $this->orderRepository->calculateCost($hotel_id, $dates_array["date_from"], $dates_array["date_till"], $qty);
             $data["cost"] = $cost;
             $data["info"] = "Стоимость: $cost ";
+
+            //сохраним заявку
+            $order = \App\Models\Orders::create(
+                [
+                    'hotel_id' => $hotel_id,
+                    'date_from' => $dates_array["date_from"],
+                    'date_till' => $dates_array["date_till"],
+                    'qty' => $qty,
+                    'cost' => $cost
+                ]
+            );
+            $order->save();
         }
 
         return view('order.index', $data);
