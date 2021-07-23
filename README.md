@@ -6,7 +6,7 @@
 
 3. копируем файл .env.example в .env.example
 ```sh 
-copy .env.example в .env
+cp .env.example .env
 ```
 
 4. В папке с приложением установим composer
