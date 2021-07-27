@@ -62,4 +62,5 @@ php artisan migrate
 
 ```orders``` - лог расчета(даты заезда, выезда, число человек, стоимость)
 
-
+## Пример работы в облаке
+https://edwardtest1.herokuapp.com/
